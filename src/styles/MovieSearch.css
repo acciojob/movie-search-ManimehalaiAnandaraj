@@ -1,0 +1,38 @@
+.movie-search {
+  text-align: center;
+  padding: 20px;
+}
+
+input {
+  padding: 10px;
+  width: 250px;
+  margin-right: 10px;
+}
+
+button {
+  padding: 10px 20px;
+}
+
+.movie-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.movie-card {
+  margin: 10px;
+  width: 150px;
+  text-align: center;
+}
+
+.movie-card img {
+  width: 100%;
+  height: auto;
+}
+
+.error {
+  color: red;
+  margin-top: 10px;
+  font-weight: bold;
+}
