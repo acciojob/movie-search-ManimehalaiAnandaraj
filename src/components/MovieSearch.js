@@ -47,22 +47,21 @@ function MovieSearch() {
        </form>
       <button onClick={searchMovies}>Search</button>
       {error && <div className="error">{error}</div>}
-      <div className="movie-list">
-        {movies.map((movie) => (
-          <div key={movie.imdbID} className="movie-card">
-            <img
-              src={movie.Poster !== 'N/A' ? movie.Poster : 'https://via.placeholder.com/150'}
-              alt={movie.Title}
-            />
-            <div>
-              <h3>{movie.Title}</h3>
-              <p>{movie.Year}</p>
-            </div>
-          </div>
-        ))}
+      <ul className="movie-list">
+  {movies.map((movie) => (
+    <li key={movie.imdbID} className="movie-card">
+      <img
+        src={movie.Poster !== 'N/A' ? movie.Poster : 'https://via.placeholder.com/150'}
+        alt={movie.Title}
+      />
+      <div>
+        <h3>{movie.Title}</h3>
+        <p>{movie.Year}</p>
       </div>
-     
-    </div>
+    </li>
+  ))}
+</ul>
+           </div>
   );
 }
 
