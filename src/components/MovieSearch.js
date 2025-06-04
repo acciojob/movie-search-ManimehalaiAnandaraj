@@ -36,6 +36,7 @@ function MovieSearch() {
 
   return (
     <div className="movie-search">
+        <form>
       <input
         type="text"
         placeholder="Search movies..."
@@ -59,6 +60,7 @@ function MovieSearch() {
           </div>
         ))}
       </div>
+      </form>
     </div>
   );
 }

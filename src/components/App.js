@@ -6,7 +6,7 @@ import 'regenerator-runtime/runtime';
 function App() {
   return (
     <div className="App">
-      <h1>Movie Search</h1>
+      <h1 style={{textAlign:'center'}}>Movie Search</h1>
       <MovieSearch />
     </div>
   );
