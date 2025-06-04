@@ -44,6 +44,7 @@ function MovieSearch() {
         onChange={(e) => setQuery(e.target.value)}
         onKeyPress={handleKeyPress}
       />
+       </form>
       <button onClick={searchMovies}>Search</button>
       {error && <div className="error">{error}</div>}
       <div className="movie-list">
@@ -60,7 +61,7 @@ function MovieSearch() {
           </div>
         ))}
       </div>
-      </form>
+     
     </div>
   );
 }
